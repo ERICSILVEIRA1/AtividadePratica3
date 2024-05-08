@@ -27,7 +27,7 @@ public class Sistema {
         System.out.print("Nome: ");
         String nome = Console.lerString();
 
-        System.out.print("Matrícula: ");
+        System.out.print("Matricula: ");
         int matricula = Console.lerInt();
 
         System.out.println("Horas trabalhadas: ");
@@ -53,7 +53,7 @@ public class Sistema {
     private static void cadastrarDesenvolvedor() {
 
         System.out.println("\nNovo Desenvolvedor:");
-        System.out.print("Matrícula: ");
+        System.out.print("Matricula: ");
         int matricula = Console.lerInt();
 
         System.out.print("Nome: ");
@@ -78,7 +78,7 @@ public class Sistema {
     private static void cadastrarEstagiario() {
 
         System.out.println("\nNovo Estagiario:");
-        System.out.print("Matrícula: ");
+        System.out.print("Matricula: ");
         int matricula = Console.lerInt();
 
         System.out.print("Nome: ");
@@ -103,9 +103,9 @@ public class Sistema {
 
      private static void procurarFuncionario() {
 
-        System.out.println("\nProcurar Funciomário:");
+        System.out.println("\nProcurar Funciomario:");
 
-        System.out.print("Matrícula: ");
+        System.out.print("Matricula: ");
         int matricula = Console.lerInt();
 
        
@@ -121,17 +121,17 @@ public class Sistema {
 
         }
 
-        System.out.println("\nFuncionário " + matricula + " não foi encontrado");
+        System.out.println("\nFuncionario " + matricula + " não foi encontrado");
 
     }
 
     private static void listarFuncionarios() {
 
-        System.out.println("\nTodos os funcionários Cadastrados:");
+        System.out.println("\nTodos os funcionarios cadastrados:");
 
         if (Cadastro.getListaFuncionarios().size() == 0) {
 
-            System.out.println("\nNão há fucionários cadastrados...");
+            System.out.println("\nNao ha fucionários cadastrados...");
             return; 
 
         }
@@ -151,13 +151,13 @@ public class Sistema {
         Funcionario f2 = Cadastro.buscar(matricula);
 
         if (f2 == null) {
-            System.out.println("\nFuncionário " + matricula + " não foi encontrado");
+            System.out.println("\nFuncionario " + matricula + " nao foi encontrado");
             return;
         }
 
         Cadastro.excluir(f2);
 
-        System.out.println("\nFuncionário excluído com sucesso!");
+        System.out.println("\nFuncionario excluido com sucesso!");
 
     }
 
@@ -198,7 +198,7 @@ public class Sistema {
 
             case 7:
             if (Cadastro.getListaFuncionarios().size() == 0) {
-                System.out.println("Não há Funcionarios para excluir");
+                System.out.println("Nao ha funcionarios para excluir");
                 return;
             }
 
@@ -213,7 +213,7 @@ public class Sistema {
 
             default:
 
-                System.out.println("\nOpção inválida. Digite novamente.");
+                System.out.println("\nOpcao invalida. Digite novamente.");
                 break;
         }
 
