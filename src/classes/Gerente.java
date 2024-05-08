@@ -20,18 +20,18 @@ public class Gerente extends Funcionario implements interfaceTrabalhavel {
 
     @Override
     public float calcularSalario() {
-        return (getHorasTrabalho() * 10) * bonusAnual;
+        return (getHorasTrabalho() * 30) * bonusAnual;
     }
 
   @Override
   public String trabalhar() {
   
-      return "Trabalho: Estou ocupado com minha agenda";
+      return "Trabalho: Estou com minha agenda cheia!!!";
   }
 
    @Override
    public String relatarProgresso() {
-       return "Progresso: Continuem trabalhando duro assim que final do mês eu troco meu corsinha";
+       return "Progresso: Continuem trabalhando!!!";
    }
 
    @Override

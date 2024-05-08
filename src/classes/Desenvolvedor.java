@@ -18,7 +18,7 @@ public class Desenvolvedor extends Funcionario implements interfaceTrabalhavel {
 
     @Override
     public float calcularSalario() {
-        return getHorasTrabalho() * 10;
+        return getHorasTrabalho() * 20;
     }
 
    @Override

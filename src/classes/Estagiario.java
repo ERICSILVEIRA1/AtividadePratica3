@@ -18,7 +18,7 @@ public class Estagiario extends Funcionario implements interfaceTrabalhavel {
 
     @Override
     public float calcularSalario() {
-        return 8 * getHorasTrabalho(); 
+        return 15 * getHorasTrabalho(); 
     }
 
  @Override

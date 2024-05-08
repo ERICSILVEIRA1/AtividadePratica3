@@ -14,10 +14,10 @@ public class Sistema {
         System.out.println("3) Cadastrar Estagiario");
         System.out.println("4) Procurar Funcionario");
         System.out.println("5) Listar Todos");
-        System.out.println("6) Excluir um Funcionário");
-        System.out.println("7) Excluir todos os Funcionários");
+        System.out.println("6) Excluir um Funcionario");
+        System.out.println("7) Excluir todos os Funcionarios");
         System.out.println("0) Sair");
-        System.out.print("Informe uma opção: ");
+        System.out.print("Informe uma opcao: ");
 
     }
      private static void cadastrarGerente() {
@@ -108,16 +108,15 @@ public class Sistema {
         System.out.print("Matrícula: ");
         int matricula = Console.lerInt();
 
-        // enviar a matricula digitada como parametro para o
-        // metodo buscar da classe Cadastro.
-        // Este método retornará ou um objeto do tipo Funcinario,
-        // ou null, se não encontrar funcionario com a mesma matricula informada
+       
         Funcionario f = Cadastro.buscar(matricula);
 
         if (f != null) {
 
             System.out.println("\nFuncionário Localizado:");
             System.out.println(f.toString());
+            System.out.println(f.toString());
+            System.out.println("Salario : " + f.calcularSalario() + "Reais");
             return;
 
         }
@@ -204,7 +203,7 @@ public class Sistema {
             }
 
             Cadastro.getListaFuncionarios().clear();
-            System.out.println("Funcionarios da lista foram excluidos com sucesso");
+            System.out.println("Todos os funcionarios foram excluidos com sucesso");
             
             break;
             case 0:
